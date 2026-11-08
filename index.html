@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090817">
-<title>Nexora — Telegram Automation Studio</title>
+<title>Главная — Nexora</title>
 <style>
+
 :root{--bg:#090817;--panel:#141127;--text:#f7f4ff;--muted:#aaa4c3;--purple:#9b6cff;--pink:#e16bff}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 5%,#38205f 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}
 header{position:sticky;top:0;z-index:10;background:#090817dd;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff14}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:25px;font-weight:800;letter-spacing:-1px}.logo span{color:#b58cff}.links{display:flex;gap:30px;color:#d5cfea;font-size:14px}.links a:hover{color:#c39bff}.menu{display:none;background:#17132b;border:1px solid #ffffff2b;border-radius:15px;width:48px;height:48px;color:white;font-size:23px}
@@ -13,29 +14,31 @@ header{position:sticky;top:0;z-index:10;background:#090817dd;backdrop-filter:blu
 section{padding:75px 0}.section-title{text-align:center;font-size:36px;letter-spacing:-1px;margin:0 0 12px}.sub{text-align:center;color:var(--muted);margin:0 auto 38px;max-width:600px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#19152e,#100e20);border:1px solid #ffffff14;border-radius:20px;padding:25px}.ico{font-size:27px}.card h3{margin:12px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}.project-label{display:inline-block;color:#c6a8ff;background:#9b6cff1c;padding:4px 9px;border-radius:20px;font-size:11px;margin-top:16px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:20px;border-left:2px solid #9b6cff;background:#ffffff08;border-radius:0 14px 14px 0}.step b{color:#bd9aff}.about{max-width:760px;margin:auto;text-align:center;color:var(--muted)}.reviews{max-width:700px;margin:auto;text-align:center}.reviews .card{color:var(--muted)}.contact{text-align:center;background:linear-gradient(120deg,#251746,#17112e);border:1px solid #ffffff16;border-radius:25px;padding:45px 20px}.contact p{color:var(--muted)}footer{padding:30px 0;color:#827b9b;border-top:1px solid #ffffff12;font-size:13px}
 @media(max-width:700px){.links{display:none;position:absolute;top:76px;left:0;right:0;background:#100d20;padding:18px 5%;flex-direction:column;gap:16px;border-bottom:1px solid #ffffff20}.links.open{display:flex}.menu{display:block}.hero{padding:75px 0 60px}.hero h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.btn.secondary{margin:12px 0 0}.section-title{font-size:30px}}
+
+.links a.active{color:#c39bff}
+.page-hero{padding:75px 0 25px;text-align:center}
+.page-hero h1{font-size:clamp(38px,6vw,60px);margin:15px 0}
+.page-content{padding:25px 0 85px}
+.back-link{display:inline-block;color:#c9adff;margin-top:25px}
+
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="logo" href="#">Nex<span>ora</span></a><nav class="links" id="navlinks"><a href="#support">Поддержка</a><a href="#projects">Портфолио</a><a href="#reviews">Отзывы</a></nav><button class="menu" id="menu" aria-label="Открыть меню">☰</button></div></header>
-<main>
-<div class="wrap hero"><span class="tag">TELEGRAM AUTOMATION STUDIO</span><h1>Умные решения.<br><span class="gradient">Меньше рутины.</span></h1><p>Создаём Telegram-ботов, которые помогают бизнесу автоматизировать общение, заявки и уведомления.</p><a class="btn" href="https://t.me/vitlllwq">Обсудить проект</a><a class="btn secondary" href="#projects">Наши проекты</a></div>
+<header><div class="wrap nav"><a class="logo" href="index.html">Nex<span>ora</span></a><nav class="links" id="navlinks"><a href="support.html" class="">Поддержка</a><a href="portfolio.html" class="">Портфолио</a><a href="reviews.html" class="">Отзывы</a></nav><button class="menu" id="menu" aria-label="Открыть меню">☰</button></div></header>
+<main><div class="wrap hero"><span class="tag">TELEGRAM AUTOMATION STUDIO</span><h1>Умные решения.<br><span class="gradient">Меньше рутины.</span></h1><p>Создаём Telegram-ботов, которые помогают бизнесу автоматизировать общение, заявки и уведомления.</p><a class="btn" href="support.html">Обсудить проект</a><a class="btn secondary" href="portfolio.html">Наши проекты</a></div>
 <section id="services"><div class="wrap"><h2 class="section-title">Что мы делаем</h2><p class="sub">Автоматизация повседневных задач — просто и удобно.</p><div class="grid">
 <article class="card"><div class="ico">✦</div><h3>Боты-помощники</h3><p>Приветствия, меню, кнопки, ответы на частые вопросы и полезные ссылки.</p></article>
 <article class="card"><div class="ico">⌁</div><h3>Приём заявок</h3><p>Сбор обращений и контактов, передача заявок администратору и уведомления.</p></article>
 <article class="card"><div class="ico">◈</div><h3>Уведомления</h3><p>Автоматические оповещения, шаблоны сообщений и удобное управление ими.</p></article>
 </div></div></section>
-<section id="projects"><div class="wrap"><h2 class="section-title">Портфолио</h2><p class="sub">Демонстрационные концепты наших будущих решений.</p><div class="grid">
-<article class="card"><h3>Bot Assistant</h3><p>Бот с меню, приветствием, кнопками и разделом FAQ.</p><span class="project-label">Demo project</span></article>
-<article class="card"><h3>Bot Manager</h3><p>Приём заявок, сбор данных и уведомление администратора.</p><span class="project-label">Demo project</span></article>
-<article class="card"><h3>Bot Notify</h3><p>Система уведомлений с шаблонами и настройками сообщений.</p><span class="project-label">Demo project</span></article>
-</div></div></section>
 <section><div class="wrap"><h2 class="section-title">Как мы работаем</h2><p class="sub">Понятный процесс от идеи до готового бота.</p><div class="steps"><div class="step"><b>01</b><h3>Знакомство</h3><p>Обсуждаем задачу.</p></div><div class="step"><b>02</b><h3>План</h3><p>Согласуем функции и сроки.</p></div><div class="step"><b>03</b><h3>Разработка</h3><p>Создаём и тестируем бота.</p></div><div class="step"><b>04</b><h3>Запуск</h3><p>Передаём готовое решение.</p></div></div></div></section>
-<section><div class="wrap"><h2 class="section-title">О Nexora</h2><p class="about">Nexora — небольшая команда, которая изучает и создаёт цифровые решения для упрощения повседневных задач. Мы делаем упор на понятный интерфейс, аккуратную работу и общение с клиентом.</p></div></section>
-<section id="reviews"><div class="wrap"><h2 class="section-title">Отзывы</h2><p class="sub">Мы не публикуем выдуманные отзывы. Здесь появятся мнения реальных клиентов после завершённых проектов.</p><div class="card reviews">Пока собираем первые проекты и обратную связь. Скоро здесь будут реальные отзывы.</div></div></section>
-<section id="support"><div class="wrap"><div class="contact"><h2 class="section-title">Есть идея для бота?</h2><p>Напишите нам — обсудим вашу задачу и подумаем над решением.</p><a class="btn" href="https://t.me/vitlllwq">Поддержка в Telegram · @vitlllwq</a></div></div></section>
-</main><footer><div class="wrap">© 2026 Nexora. Telegram Automation Studio.</div></footer>
+<section><div class="wrap"><h2 class="section-title">О Nexora</h2><p class="about">Nexora — небольшая команда, которая изучает и создаёт цифровые решения для упрощения повседневных задач. Мы делаем упор на понятный интерфейс, аккуратную работу и общение с клиентом.</p></div></section></main>
+<footer><div class="wrap">© 2026 Nexora. Telegram Automation Studio.</div></footer>
+
 <script>
 const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
 menu.addEventListener('click',()=>{links.classList.toggle('open');menu.textContent=links.classList.contains('open')?'×':'☰'});
 links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.textContent='☰'}));
-</script></body></html>
+</script>
+
+</body></html>
